@@ -1,13 +1,12 @@
 import logging
 import time
-from typing import Dict, List, Any, Optional
-import requests
+from typing import Optional
 from zeep import Client
-from zeep.exceptions import TransportError, Fault
+from zeep.exceptions import TransportError
 from zeep.wsse.username import UsernameToken
 from zeep.cache import SqliteCache
 from zeep.transports import Transport
-from requests.exceptions import RequestException, Timeout, ConnectionError
+from requests.exceptions import Timeout, ConnectionError
 
 from src.api.config import settings
 
